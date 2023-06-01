@@ -171,8 +171,7 @@ endmodule
 # RTL LOGIC FOR FLIPFLOPS:
 
 i.) SR Flip-Flop:
-
-![Uploading WhatsApp Image 2023-06-01 at 11.22.35.jpg…]()
+![2023-06-01 (5)](https://github.com/shoaib3136/Experiment--05-Implementation-of-flipflops-using-verilog/assets/117919362/29147497-9af4-45b6-a5db-d4b1de1a3507)
 
 
 ii.)  D Flip-Flop:
@@ -195,7 +194,8 @@ iv.)  T Flip-Flop:
 
 # TIMING DIGRAMS FOR FLIP FLOPS :
 i.) SR Flip-Flop:
-![Uploading image.png…]()
+![2023-06-01 (3)](https://github.com/shoaib3136/Experiment--05-Implementation-of-flipflops-using-verilog/assets/117919362/5748c9ff-f810-482f-8b0f-429c37e5c72f)
+
 
 
 ii.)  D Flip-Flop:
