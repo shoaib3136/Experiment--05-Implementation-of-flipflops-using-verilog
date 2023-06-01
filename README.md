@@ -148,6 +148,19 @@ end
 endmodule
 
 iii.)  JK Flip-Flop:
+module JK (j,k,clk,Q,Qbar);
+input j,k,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+	Q=((~k)&(Q)) | ((j)&(~Q));
+	Qbar= ((~j)&(~Qbar)) | (k & Qbar);
+end
+endmodule
+
 
 
 iv.)  T Flip-Flop:
@@ -178,6 +191,8 @@ ii.)  D Flip-Flop:
 ![WhatsApp Image 2023-05-29 at 21 00 04](https://github.com/shoaib3136/Experiment--05-Implementation-of-flipflops-using-verilog/assets/117919362/086e84ec-10c6-4772-b52c-b12e6e14aede)
 
 iii.)  JK Flip-Flop:
+![image](https://github.com/shoaib3136/Experiment--05-Implementation-of-flipflops-using-verilog/assets/117919362/d9e74448-2d4c-4622-ba0d-d8efaf59fc44)
+
 
 
 iv.)  T Flip-Flop:
@@ -203,6 +218,8 @@ ii.)  D Flip-Flop:
 
 
 iii.)  JK Flip-Flop:
+![image](https://github.com/shoaib3136/Experiment--05-Implementation-of-flipflops-using-verilog/assets/117919362/2da48f93-cb94-45ec-a4dc-8ca20f50a134)
+
 
 
 iv.)  T Flip-Flop:
