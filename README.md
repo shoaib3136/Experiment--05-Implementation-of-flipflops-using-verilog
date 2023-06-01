@@ -122,6 +122,19 @@ Developed by: Shaik Shoaib Nawaz
 RegisterNumber: 212222240094 
 */
 i.) SR Flip-Flop:
+module SR (s,r,clk,Q,Qbar);
+input s,r,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+	Q=s | ((~r) & Q);
+	Qbar=r  | ((~s)&(Qbar));
+end
+endmodule
+
 
 ii.)  D Flip-Flop:
 module D (d,clk,qpa,qpr,qprbar);
@@ -159,6 +172,9 @@ endmodule
 
 i.) SR Flip-Flop:
 
+![Uploading WhatsApp Image 2023-06-01 at 11.22.35.jpg…]()
+
+
 ii.)  D Flip-Flop:
 ![WhatsApp Image 2023-05-29 at 21 00 04](https://github.com/shoaib3136/Experiment--05-Implementation-of-flipflops-using-verilog/assets/117919362/086e84ec-10c6-4772-b52c-b12e6e14aede)
 
@@ -179,6 +195,8 @@ iv.)  T Flip-Flop:
 
 # TIMING DIGRAMS FOR FLIP FLOPS :
 i.) SR Flip-Flop:
+![Uploading image.png…]()
+
 
 ii.)  D Flip-Flop:
 ![image](https://github.com/shoaib3136/Experiment--05-Implementation-of-flipflops-using-verilog/assets/117919362/c9d410d5-584c-40c6-af76-0f47332e56e6)
